@@ -1,1 +1,4 @@
-
+SecurityEvent
+| where EventID == 4688
+| where NewProcessName contains "powershell.exe"
+| where CommandLine contains "mshta.exe"
